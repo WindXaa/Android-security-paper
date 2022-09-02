@@ -5,15 +5,18 @@
 
 ### 1.Android恶意应用检测
 
-### 2.Android加壳与脱壳
-
-### 3.Android隐私合规性检测
-
-### 4.Android漏洞挖掘
+### 2.Android漏洞挖掘研究
 
 **1.identity Confusion in WebView-based Mobile App-in-app Ecosystems**
 
 论文简介：这是今年复旦大学计算机科学技术学院杨珉教授领衔的系统与软件安全实验室发表的论文，目前荣获网络安全国际顶尖学术会议31st USENIX Security Symposium杰出论文奖，论文主要关注于当前移动端小程序上面存在的漏洞问题，并展示了一种漏洞原理——身份混淆漏洞，通过混淆子应用程序的身份来获得特权API，然后集合WebView的加载机制，可以产生钓鱼、数据泄露、权限提升等漏洞。
+
+### 3.Android混淆技术检测
+
+### 4.Android脱壳技术研究
+
+### 4.Android隐私合规研究
+
 
 未完待续...
 
