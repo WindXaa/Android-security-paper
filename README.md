@@ -19,6 +19,10 @@
 
 ### 4.Android脱壳技术研究
 
+**1.Things You May Not Know About Android (Un)Packers: A Systematic Study based on Whole-System Emulation（NDSS CCF-A-2018）**
+
+论文简介：今天介绍比较早的论文，2018年NDSS上的顶会论文，该论文提出了一个基于仿真器的脱壳机DroidUnPack, 该工具可以有效的进行脱壳，并且论文中的数据集也值得借鉴，论文描述了当前恶意应用加壳的现状。
+
 ### 5.Android隐私合规研究
 
 
