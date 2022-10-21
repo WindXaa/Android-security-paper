@@ -25,6 +25,10 @@
 
 论文简介：目前针对恶意Android应用的静态检测方法大多基于对病毒哈希值的分析与匹配,无法迅速检测出新型恶意Android应用及其变种,为了降低现有静态检测的漏报率,提高对新型恶意应用的检测速度,提出一种通过深度网络融合模型实现的恶意Android应用检测方法。首先提取反编译得到的Android应用核心代码中的静态特征,随后进行代码向量化处理,最后使用深度学习网络进行分类判别。该方法实现了对恶意应用高准确度的识别,经过与现存方法的对比分析,验证了该方法在恶意代码检测中的优越性。
 
+**6. 基于 API 和 Permission 的 Android 恶意软件静态检测方法研究（计算机应用与软件 CCF-C-2020）**
+
+论文简介：本文提出一种Android恶意软件静态检测方法。对收集到的训练集中的所有APK文件进行静态反编译,提取其中的静态信息;对静态信息中的API和Permission进行统计学分析,得到API和Permission在恶意APK和正常APK中的使用率;根据它们的使用率确定基准API和Permission集合,将每一个APK转换成可参与计算的关于API和Permission的特征向量;利用改进的k-NN分类器,对待检测的APK进行分类判定。实验结果表明,该方法可以有效地对APK进行恶意分类。
+
 ### 2.Android漏洞挖掘研究
 
 **1.identity Confusion in WebView-based Mobile App-in-app Ecosystems（USENIX CCF-A-2022）**
