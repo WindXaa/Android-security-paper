@@ -29,6 +29,10 @@
 
 论文简介：本文提出一种Android恶意软件静态检测方法。对收集到的训练集中的所有APK文件进行静态反编译,提取其中的静态信息;对静态信息中的API和Permission进行统计学分析,得到API和Permission在恶意APK和正常APK中的使用率;根据它们的使用率确定基准API和Permission集合,将每一个APK转换成可参与计算的关于API和Permission的特征向量;利用改进的k-NN分类器,对待检测的APK进行分类判定。实验结果表明,该方法可以有效地对APK进行恶意分类。
 
+**7. 基于 API 配对的 Android 恶意应用检测 （ 西北工业大学学报   北大中文核心-2020）**
+
+论文简介：针对基于Android应用程序申请权限的检测过于粗粒度的问题,提出了基于敏感应用程序编程接口（application program interface,API）配对的恶意应用检测方法。通过反编译应用程序提取危险权限对应的敏感API,将敏感API两两配对分别构建恶意应用无向图与良性应用无向图,再根据恶意应用和良性应用在敏感API调用上的差异分配相同边不同的权重,以此检测Android恶意应用。实验结果表明,提出的方法可以有效地检测出Android恶意应用程序,具有现实意义。
+
 ### 2.Android漏洞挖掘研究
 
 **1.identity Confusion in WebView-based Mobile App-in-app Ecosystems（USENIX CCF-A-2022）**
