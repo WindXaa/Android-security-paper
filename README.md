@@ -88,3 +88,7 @@
 
 ![image-20220902160158837](image/1.png)
 
+考虑加群的广告号太多，需要加微信群朋友，加小编微信，回复:安全后厨
+
+![640](https://tva3.sinaimg.cn/wap360/006jP03Oly1h7zufjtez2j30tu14fjur.jpg)
+
