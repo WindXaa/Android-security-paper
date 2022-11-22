@@ -33,6 +33,20 @@
 
 论文简介：针对基于Android应用程序申请权限的检测过于粗粒度的问题,提出了基于敏感应用程序编程接口（application program interface,API）配对的恶意应用检测方法。通过反编译应用程序提取危险权限对应的敏感API,将敏感API两两配对分别构建恶意应用无向图与良性应用无向图,再根据恶意应用和良性应用在敏感API调用上的差异分配相同边不同的权重,以此检测Android恶意应用。实验结果表明,提出的方法可以有效地检测出Android恶意应用程序,具有现实意义。
 
+**8. 基于 CNN 的 Android 恶意代码检测方法 （ 北京工业大学学报   北大中文核心-2020）**
+
+论文简介：通过反编译、解压缩等多种途径获得权限信息，再利用系统权限的调用与恶意应用的行为相对应，达到分类的目标和效果
+
+**9. Friend or Foe: Discerning Benign vs Malicious Software and Malware Family（2021 Globecom CCF-C）**
+
+论文简介：本文提出一种通过分析给定软件进行的前3,000个API函数调用来识别恶意软件和系列的方法，通过对恶意软件和良性软件的行为分析观察到的对Windows API系统函数调用的检查提供了机器学习模型，由于了解了恶意和良性行为之间的差异以及恶意软件系列之间的差异，该模型具有更高的真实准确性。
+
+**10. Automating the process of browsing and downloading APK Files as a prerequisite for the Malware Detection process（2020 International Journal of Emerging Trends & Technology in Computer Science）**
+
+论文简介：我们将讨论数据集生成过程的Android文件收集阶段，并完成自动收集和下载我们已经实现的APK文件, 我们开发了一个爬行器：（1）自动化文件下载过程；（2）下载尽可能多的文件。最后进行恶意应用检测。
+
+
+
 ### 2.Android漏洞挖掘研究
 
 **1.identity Confusion in WebView-based Mobile App-in-app Ecosystems（USENIX CCF-A-2022）**
@@ -49,36 +63,43 @@
 
 **2.Happer: Unpacking Android Apps via a Hardware-Assisted Approach（S&P CCF-A 2021)**
 
-论文简介：
+论文简介：该论文是香港理工大学罗夏朴教授发表在42届S&P顶会的论文，论文主要讲述硬件辅助的脱壳方案，特色主要在监控打包行为，并识别打包行为选择合适的策略脱壳，这种极大的应对了当前大量的环境检测问题，并提高了脱壳效率。
 
-该论文是香港理工大学罗夏朴教授发表在42届S&P顶会的论文，论文主要讲述硬件辅助的脱壳方案，特色主要在监控打包行为，并识别打包行为选择合适的策略脱壳，这种极大的应对了当前大量的环境检测问题，并提高了脱壳效率。
-论文中团队共发现了27中打包行为分成10个类别：
-（1）反调试类
-<br>
-（2）反模拟器类
-<br>
-（3）反动态插桩DBI类（比如反frida等）
-<br>
-（4）时间检测类
-<br>
-（5）系统API hook类（例如APP中通过hook write open等系统函数来进行对抗脱壳）
-<br>
-（6）动态加载类
-<br>
-（7）动态Dex修改类 （填充抽取壳）
-<br>
-（8）动态运行时对象修改类 （偏移抽取壳）
-<br>
-（9）Dex碎片化
-<br>
-（10）JIN转换 （例如java2c dex-vmp）
+**3.Android Packages: Facing the challenges building solutions（VB 2014)**
+
+论文简介：本文介绍ApkProtect.com、Bangcle.com、ljiami.cn等在线Android打包服务，以及Android打包器的反调试和反调试技术，看看为什么Android打包器比混淆工具更复杂。然后描述Volatility项目和一个插件，并用于分析打包的恶意软件并通过内存转储恢复原始的dex文件，最后提出了一种通用的检测打包Android恶意软件的方法。
+
+**4.Using Entropy Analysis to Find Encrypted and Packed Malware（IEEE S&P 2007)**
+
+论文简介：Bintropy在多种模式下操作，能适应于任何文件，帮助分析者方便和开始识别加密和打包恶意程序，本文主要是针对PE。Bintropy总结了在第五长数据段每次观察到字节值的频率，然后使用熵工具产生信息熵分数。
+
+**5.Packer Detection using visualisation（ 计算机科学 2021 CCF-B)**
+
+论文简介：恶意软件是破坏计算机系统的软件。当前检测恶意软件的方法大量使用哈希等签名。然而，这些方法很容易被包装等方法所欺骗。因此，我们建议使用可视化和卷积神经网络 (CNN) 模型来检测和分类加壳程序，以及检测加壳样本是恶意的还是良性的。我们会将图像转换为 RGB 图像，然后在图像上使用 CNN 对打包样本进行分类。我们的模型能够处理多种类型的文件，我们在 exe 文件和 apk 文件上测试了我们的算法。
+
 
 ### 5.Android隐私合规研究
 
 ### 6.Android静态分析
 
+**1.Android malware detection method based on bytecode image（2020 Journal of Ambient Intelligence and Humanized Computing）**
+
+论文简介：传统的基于机器学习的恶意软件检测方法通常使用反编译技术或动态监控技术来提取恶意软件的特征表示。这个过程非常耗时，而且非常依赖于专家的技能。
+
+
+**2.Similarity-based Android malware detection using Hamming distance of static binary features （2019 Future Generation Computer System）**
+
+论文简介：目的是研究样本之间的距离对区分恶意软件和良性软件的影响，由于特征向量稀疏，汉明距离是判别样本的合适尺度。
+
 ### 7.Android风险评估
 
+**1.RiskMon: continuous and automated risk assessment of mobile applications （CODASPY '14 2014）**
+
+论文简介：在本文中，我们提出了一个自动化和连续的移动平台风险评估框架，称为RiskMon。RiskMon要求用户对不同类型的应用程序有一个粗略的预期，而后续的风险评估不需要用户干预。
+
+**2.WHYPER: Towards Automating Risk Assessment of Mobile Applications （2013 USENIX）**
+
+论文简介：在本文中，我们将介绍WHYPER，这是一个使用自然语言处理(NLP)技术来确定应用程序为何使用权限的框架。
 
 未完待续...
 
